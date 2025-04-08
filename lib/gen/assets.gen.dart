@@ -15,28 +15,91 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/ic_add_text.svg
+  SvgGenImage get icAddText =>
+      const SvgGenImage('assets/icons/ic_add_text.svg');
+
+  /// File path: assets/icons/ic_bell_solid.svg
+  SvgGenImage get icBellSolid =>
+      const SvgGenImage('assets/icons/ic_bell_solid.svg');
+
   /// File path: assets/icons/ic_bell_stroke.svg
   SvgGenImage get icBellStroke =>
       const SvgGenImage('assets/icons/ic_bell_stroke.svg');
+
+  /// File path: assets/icons/ic_comment_stroke.svg
+  SvgGenImage get icCommentStroke =>
+      const SvgGenImage('assets/icons/ic_comment_stroke.svg');
 
   /// File path: assets/icons/ic_feature_stroke.svg
   SvgGenImage get icFeatureStroke =>
       const SvgGenImage('assets/icons/ic_feature_stroke.svg');
 
+  /// File path: assets/icons/ic_heart_solid.svg
+  SvgGenImage get icHeartSolid =>
+      const SvgGenImage('assets/icons/ic_heart_solid.svg');
+
+  /// File path: assets/icons/ic_heart_stroke.svg
+  SvgGenImage get icHeartStroke =>
+      const SvgGenImage('assets/icons/ic_heart_stroke.svg');
+
   /// File path: assets/icons/ic_home_solid.svg
   SvgGenImage get icHomeSolid =>
       const SvgGenImage('assets/icons/ic_home_solid.svg');
+
+  /// File path: assets/icons/ic_home_stroke.svg
+  SvgGenImage get icHomeStroke =>
+      const SvgGenImage('assets/icons/ic_home_stroke.svg');
+
+  /// File path: assets/icons/ic_logo.svg
+  SvgGenImage get icLogo => const SvgGenImage('assets/icons/ic_logo.svg');
+
+  /// File path: assets/icons/ic_message_solid.svg
+  SvgGenImage get icMessageSolid =>
+      const SvgGenImage('assets/icons/ic_message_solid.svg');
+
+  /// File path: assets/icons/ic_message_stroke.svg
+  SvgGenImage get icMessageStroke =>
+      const SvgGenImage('assets/icons/ic_message_stroke.svg');
+
+  /// File path: assets/icons/ic_retweet_stroke.svg
+  SvgGenImage get icRetweetStroke =>
+      const SvgGenImage('assets/icons/ic_retweet_stroke.svg');
 
   /// File path: assets/icons/ic_search_solid.svg
   SvgGenImage get icSearchSolid =>
       const SvgGenImage('assets/icons/ic_search_solid.svg');
 
+  /// File path: assets/icons/ic_search_stroke.svg
+  SvgGenImage get icSearchStroke =>
+      const SvgGenImage('assets/icons/ic_search_stroke.svg');
+
+  /// File path: assets/icons/ic_share_stroke.svg
+  SvgGenImage get icShareStroke =>
+      const SvgGenImage('assets/icons/ic_share_stroke.svg');
+
+  /// File path: assets/icons/ic_tick.svg
+  SvgGenImage get icTick => const SvgGenImage('assets/icons/ic_tick.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
+    icAddText,
+    icBellSolid,
     icBellStroke,
+    icCommentStroke,
     icFeatureStroke,
+    icHeartSolid,
+    icHeartStroke,
     icHomeSolid,
+    icHomeStroke,
+    icLogo,
+    icMessageSolid,
+    icMessageStroke,
+    icRetweetStroke,
     icSearchSolid,
+    icSearchStroke,
+    icShareStroke,
+    icTick,
   ];
 }
 
