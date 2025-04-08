@@ -1,14 +1,15 @@
-# Run the Flutter app
-.PHONY: run
-run:
-    flutter run
-
-# Clean the Flutter project
-.PHONY: clean
-clean:
-    flutter clean
-
-# Get dependencies
 .PHONY: get
 get:
-    flutter pub get
+	fvm flutter pub get
+
+.PHONY: clean
+clean:
+	fvm flutter clean
+
+.PHONY: build
+build:
+	fvm dart run build_runner build
+
+.PHONY: gen-localize
+gen-localize:
+	fvm flutter gen-l10n

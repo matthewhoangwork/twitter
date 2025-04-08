@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localization/flutter_localization.dart';
+import 'package:twitter/l10n/localization_utils.dart';
+import 'package:twitter/locator.dart';
+import 'package:twitter/pages/home/home_page.dart';
 import 'theme/app_theme.dart';
 
-void main() {
+final FlutterLocalization localization = FlutterLocalization.instance;
+void main() async{
+  await locator();
   runApp(const MyApp());
 }
 
@@ -11,33 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      localizationsDelegates: const [
-        // AppLocalizationsDelegate(),
-      ],
-      supportedLocales: const [
-        Locale('en', ''),
-        Locale('es', ''),
-      ],
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // title: Text(AppLocalizations.of(context).translate('hello')),
-      ),
-      body: Center(
-        // child: Text(AppLocalizations.of(context).translate('welcome')),
-      ),
+      localizationsDelegates: [S.delegate],
+      supportedLocales: S.supportedLocales,
+      home: const HomePage(),
     );
   }
 }
